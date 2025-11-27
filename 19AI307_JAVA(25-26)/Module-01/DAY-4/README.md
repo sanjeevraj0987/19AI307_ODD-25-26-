@@ -21,8 +21,8 @@ To read an array and find the maximum odd number present in it.
  ```
 /*
 Program to implement a Array concept using Java
-Developed by: Akshaya Lakshmi V S
-RegisterNumber:  212222040005
+Developed by: Sanjeev Raj T
+RegisterNumber:  212222040148
 */
 ```
 
@@ -61,4 +61,5 @@ class prog{
 ## RESULT:
 
 Thus, the program executed successfully and displayed the correct output based on the given input and conditions.
+
 
