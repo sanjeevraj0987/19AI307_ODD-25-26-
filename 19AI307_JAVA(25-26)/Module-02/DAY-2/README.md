@@ -1,75 +1,82 @@
-
-# Ex.No:1(B) CONDITIONAL STATEMENT
+# Ex.No:2(B) METHODS
 
 ## QUESTION:
-A dragon wakes based on temperature:
 
-If temperature < 0, it hibernates.
-If 0 ≤ temp ≤ 20, it snoozes.
-If 21 ≤ temp ≤ 35, it wakes.
-If temp > 35, it gets angry.
+Create two methods:
 
-Write a java program to get the user input for temperature and display appropriate output.
+1. **double getArea(double r)** → Calculates and returns the area of a circle (should not print anything).
+2. **void printArea(double area)** → Prints the calculated area.
 
-**Example Input:** -5
+The program reads the radius from the user, computes the area using `getArea()`, and prints it using `printArea()`.
 
-**Result :** Hibernating
+Example:
 
+| Input | Result |
+| ----- | ------ |
+| 2     | 12.56  |
+
+---
 
 ## AIM:
 
-To write a java program to get the user input for temperature and display appropriate output.
+To write a Java program that demonstrates the use of methods by calculating and printing the area of a circle using separate functions for computation and output.
 
+---
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Create a Scanner object to read input from the user.
-4.	Read an integer value and store it in the variable temp.
-5.	Check if temp < 0 : If true, print "Hibernating".
-6.	Else if temp is between 0 and 20 (inclusive) : Print "Snoozing".
-7.	Else if temp is between 21 and 35 (inclusive): Print "Awake".
-8.	Else (i.e., temp > 35): Print "Angry".
 
+1. Start the program.
+2. Import the necessary package `java.util`.
+3. Define a method `getArea()` to calculate and return the area of a circle.
+4. Define a method `printArea()` to print the area passed to it.
+5. In the main method, get user input for radius.
+6. Call `getArea()` to compute the area.
+7. Call `printArea()` to display the area.
+8. End the program.
+
+---
 
 ## PROGRAM:
-```txt
-Program to implement a conditional statement using Java
-Developed by:SANJEEV RAJ T
-RegisterNumber: 212222040148
+
 ```
+/*
+Program to implement a Methods using Java
+Developed by: SANJEEV RAJ T
+RegisterNumber: 212223040001
+*/
+```
+
+---
+
 ## SOURCE CODE:
-```java
+
+```
 import java.util.*;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        int temp=sc.nextInt();
-        if(temp<0){
-            System.out.println("Hibernating");
-        }
-        else if(temp>=0 && temp <=20){
-            System.out.println("Snoozing");
-        }
-        else if(temp >=21 && temp <=35){
-            System.out.println("Awake");
-        }
-        else{
-            System.out.println("Angry");
-        }
+class prog {
+    double getArea(double r) {
+        return 3.14*r*r;
+    }
+    void printArea(double area) {
+        System.out.printf("%.2f",area);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        prog obj = new prog();
+        double r = sc.nextDouble();
+        obj.printArea(obj.getArea(r));
     }
 }
 ```
 
-## OUTPUT:
-<img width="510" height="370" alt="image" src="https://github.com/user-attachments/assets/23484b5f-f550-460c-b508-5d8f259afab8" />
+---
 
+## OUTPUT:
+<img width="436" height="215" alt="Screenshot 2025-11-24 at 1 24 49 PM" src="https://github.com/user-attachments/assets/17882dba-73b8-45c8-a2da-4987542fd5d5" />
+
+
+---
 
 ## RESULT:
-Thus, a java program to get the user input for temperature and display appropriate output is executed successfully.
 
-
-
-
-
+Thus, the Java program using methods to compute and display the area of a circle was successfully executed and the output was verified.
 
