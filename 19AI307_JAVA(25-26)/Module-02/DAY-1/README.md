@@ -1,58 +1,89 @@
-# Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
+# Ex.No:2(A) CLASS AND OBJECT
 
 ## QUESTION:
 
-A shop keeper would like to welcome their customers with their name.
+Create a class **Course** with attributes **code**, **title**, and **credits**.
+Read details for two courses and display them in the following format:
 
-Write a java program to get name from the user (String) and print it.
+Example:
 
-**Input Format:**
+| Input                          | Result                                                 |
+| ------------------------------ | ------------------------------------------------------ |
+| CS101 Java 4<br>CS102 Python 3 | CS101 | Java | 4 credits<br>CS102 | Python | 3 credits |
 
-A single line string input.
-
-**Output Format:**
-
-Hello, [name]
-
-**Example Input:** Ajeesh 
-
-**Result :** Hello, Ajeesh
+---
 
 ## AIM:
-To write a Java program that gets the user's name as input (String) and prints a welcome message.
+
+To write a Java program that creates a class with attributes and demonstrates object creation, attribute assignment, and displaying object data.
+
+---
 
 ## ALGORITHM :
+
 1. Start the program.
-2. Import the necessary package 'java.util'
-3. Create a Scanner object to read input from the user.
-4. Read a string input (the user's name).
-5. Store the input in the variable name.
-6. Display the message: "Hello, " + name
+2. Import the necessary package `java.util`.
+3. Create a `Course` class with attributes: code, title, credits.
+4. In the main method, create two Course objects.
+5. Read input values for both objects.
+6. Display the course details in the required format.
+7. End the program.
+
+---
 
 ## PROGRAM:
-```txt
-Program to implement variables and Operators using Java
-Developed by:Bala Sathiesh CS
-RegisterNumber:  212222040022
+
+```
+/*
+Program to implement a Class and Objects using Java
+Developed by: H AARON
+RegisterNumber: 212223040001
+*/
 ```
 
-## SOURCE CODE
-```java
-import java.util.*;
-public class prog{
-    public static void main(String[] args){
-        Scanner sc= new Scanner(System.in);
-        String name = sc.next();
-        System.out.print("Hello, "+name);
+---
+
+## SOURCE CODE:
+
+```
+import java.util.Scanner;
+
+class Course {
+    String code;
+    String title;
+    int credits;
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Course c1 = new Course();
+        c1.code = sc.next();
+        c1.title = sc.next();
+        c1.credits = sc.nextInt();
+
+        Course c2 = new Course();
+        c2.code = sc.next();
+        c2.title = sc.next();
+        c2.credits = sc.nextInt();
+
+        System.out.println(c1.code + " | " + c1.title + " | " + c1.credits + " credits");
+        System.out.println(c2.code + " | " + c2.title + " | " + c2.credits + " credits");
+
+        sc.close();
     }
 }
 ```
 
+---
+
 ## OUTPUT:
-<img width="557" height="200" alt="image" src="https://github.com/user-attachments/assets/98db669e-de66-4c23-b76d-49b6a9a6754f" />
+<img width="739" height="278" alt="Screenshot 2025-11-24 at 1 23 13 PM" src="https://github.com/user-attachments/assets/eb7b2153-ed2e-4031-8b7c-76154665ab59" />
+
+---
 
 ## RESULT:
-Thus, the java program to get name from the user (String) and print it is executed successfully.
 
-
+Thus, the Java program to implement classes and objects using the Course example was successfully executed and verified.
 
