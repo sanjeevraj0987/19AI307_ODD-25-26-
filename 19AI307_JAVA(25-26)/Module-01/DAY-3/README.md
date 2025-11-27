@@ -21,8 +21,8 @@ To read a number from the user and display all of its factors.
  ```
 /*
 Program to implement a Looping Statement using Java
-Developed by: Akshaya Lakshmi V S
-RegisterNumber:  212222040005
+Developed by: Sanjeev Raj T
+RegisterNumber:  212222040148
 */
 ```
 
@@ -57,4 +57,5 @@ class prog{
 ## RESULT:
 
 Thus, the program executed successfully and displayed the correct output based on the given input and conditions.
+
 
