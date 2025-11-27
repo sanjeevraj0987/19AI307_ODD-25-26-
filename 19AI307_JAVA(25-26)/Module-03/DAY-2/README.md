@@ -24,8 +24,8 @@ To write a Java program that demonstrates method overloading by calculating the 
 ## PROGRAM:
  ```
 Program to implement a Polymorphism using Java
-Developed by:Bala Sathiesh CS 
-RegisterNumber:212222040022 
+Developed by: SANJEEV RAJ T
+RegisterNumber:212222040148
 ```
 
 ## SOURCE CODE:
@@ -70,4 +70,5 @@ public class Main
 
 ## RESULT:
 The program successfully demonstrates method overloading by calculating and displaying the areas of a square, rectangle, and circle using three versions of the area() method.
+
 
