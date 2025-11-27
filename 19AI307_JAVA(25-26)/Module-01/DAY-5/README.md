@@ -21,8 +21,8 @@ To remove all spaces from a given string and display the modified result.
  ```
 /*
 Program to implement a Strings and Math Function using Java
-Developed by: Akshaya Lakshmi V S
-RegisterNumber: 212222040005 
+Developed by: Sanjeev Raj T
+RegisterNumber: 212222040148
 */
 ```
 
@@ -52,4 +52,5 @@ class prog{
 ## RESULT:
 
 Thus, the program executed successfully and displayed the correct output based on the given input and conditions.
+
 
