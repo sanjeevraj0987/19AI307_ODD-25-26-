@@ -26,8 +26,8 @@ To determine and display the quarter of the year based on the month number enter
  ```
 /*
 Program to implement a conditional statement using Java
-Developed by: Akshaya lakshmi V S
-RegisterNumber:  212222040005
+Developed by: Sanjeev Raj T
+RegisterNumber:  212222040148
 */
 ```
 
@@ -58,4 +58,5 @@ class prog{
 
 ## RESULT:
 Thus, the program executed successfully and displayed the correct output based on the given input and conditions.
+
 
