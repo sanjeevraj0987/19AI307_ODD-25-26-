@@ -1,74 +1,106 @@
-# Ex.No:1(C) LOOPING STATEMENT
+# Ex.No:2(C) ACCESS SPECIFIERS
 
 ## QUESTION:
 
-Write a Java program to print the Fibonacci series using a for loop. The series starts with 0 and 1, and the next number is the sum of the previous two.
+Write a Java program to create a class **Person** with private instance variables:
 
-**Input:** 1
+* `name`
+* `age`
+* `country`
 
-**Result:** Fibonacci Series: 0 1
+Provide **public getter and setter methods** to access and modify these variables.
+Read user input for name, age, and country, set the values using setter methods, and display them using getter methods.
+
+---
 
 ## AIM:
 
-To write a Java program using a for loop to print the Fibonacci series starting from 0 and 1.
+To implement a Java program demonstrating the concept of **access specifiers**, specifically encapsulation, by using private variables with public getter and setter methods.
+
+---
 
 ## ALGORITHM :
+
 1. Start the program.
-2. Import the necessary package java.util.
-3. Create a Scanner object to read the number of terms.
-4. Initialize two variables a = 0 and b = 1 to represent the first two Fibonacci numbers.
-5. If the input is 1, print “0 1”.
-6. Otherwise, use a for loop to generate the Fibonacci series:
-   - Print the current value of a.
-   - Compute the next term as next = a + b.
-   - Update values: a = b and b = next.
-7. End the loop and terminate the program.
+2. Import the necessary package `java.util`.
+3. Create a class `Person` with private variables: name, age, and country.
+4. Provide public getter and setter methods for accessing and modifying the private variables.
+5. In the main method, read the user inputs for name, age, and country.
+6. Create a `Person` object and assign values using setter methods.
+7. Display the details using getter methods.
+8. End the program.
+
+---
 
 ## PROGRAM:
 
-```txt
-Program to implement a Looping Statement using Java
-Developed by: Bala Sathiesh CS
-RegisterNumber: 212222040022
 ```
+/*
+Program to implement Access Specifiers using Java
+Developed by: H AARON
+RegisterNumber: 212223040001
+*/
+```
+
+---
 
 ## SOURCE CODE:
 
-```java
+```
 import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
-        int a = 0;
-        int b = 1;
+public class Person {
+  
+    private String name;
+    private int age;
+    private String country;
 
-        System.out.print("Fibonacci Series: ");
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+    public void setCountry(String country) {
+        this.country = country;
+    }
+    
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        int age = sc.nextInt();
+        sc.nextLine();
+        String country = sc.nextLine();
         
-        if(num == 1) {
-            System.out.print("0 1");
-        } else {
-            for(int i = 0; i < num; i++) {
-                System.out.print(a + " ");
-                int next = a + b;
-                a = b;
-                b = next;
-            }
-        }
+        Person obj = new Person();
+        obj.setName(name);
+        obj.setAge(age);
+        obj.setCountry(country);
+        
+        System.out.printf("Person 1 \nName: %s\nAge: %d\nCountry: %s", 
+                           obj.getName(), obj.getAge(), obj.getCountry());
     }
 }
 ```
 
-## OUTPUT:
+---
 
-<img width="767" height="244" alt="image" src="https://github.com/user-attachments/assets/d52c5f8d-9c8e-4890-b3dd-c8935bc096c6" />
+## OUTPUT:
+<img width="747" height="437" alt="Screenshot 2025-11-24 at 1 27 11 PM" src="https://github.com/user-attachments/assets/b2b6d89a-6e24-4a2a-97aa-a84c52bde140" />
+
+---
 
 ## RESULT:
-Thus, the Java program to print the Fibonacci series using a for loop was executed successfully.
 
-
-
-
-
-
+Thus, the Java program demonstrating access specifiers using getter and setter methods was successfully executed and verified.
 
