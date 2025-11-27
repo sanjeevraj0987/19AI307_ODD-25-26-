@@ -1,73 +1,72 @@
-# Ex.No:1(C) LOOPING STATEMENT
+# Ex.No:2(D) VARIABLE SCOPE AND CONSTRUCTOR
 
 ## QUESTION:
 
-Write a Java program to print the Fibonacci series using a for loop. The series starts with 0 and 1, and the next number is the sum of the previous two.
-
-**Input:** 1
-
-**Result:** Fibonacci Series: 0 1
+Write a Java program to demonstrate a parameterized constructor.
 
 ## AIM:
 
-To write a Java program using a for loop to print the Fibonacci series starting from 0 and 1.
+To write a Java program that demonstrates the use of a parameterized constructor to initialize object values.
 
 ## ALGORITHM :
+
 1. Start the program.
-2. Import the necessary package java.util.
-3. Create a Scanner object to read the number of terms.
-4. Initialize two variables a = 0 and b = 1 to represent the first two Fibonacci numbers.
-5. If the input is 1, print “0 1”.
-6. Otherwise, use a for loop to generate the Fibonacci series:
-   - Print the current value of a.
-   - Compute the next term as next = a + b.
-   - Update values: a = b and b = next.
-7. End the loop and terminate the program.
+2. Import the necessary package `java.util`.
+3. Create a class `Employee` with variables `name` and `id`.
+4. Define a parameterized constructor to initialize the variables.
+5. Create a method `display()` to print the employee details.
+6. In the `main` method, create a `Scanner` object to read user input.
+7. Create an `Employee` object by passing the input values to the parameterized constructor.
+8. Call the `display()` method to print the output.
+9. End the program.
 
 ## PROGRAM:
 
-```txt
-Program to implement a Looping Statement using Java
-Developed by: Bala Sathiesh CS
-RegisterNumber: 212222040022
+```
+/*
+Program to implement a Variable scope and Constructor using Java
+Developed by: SANJEEV RAJ T
+RegisterNumber:  212223040001
+*/
 ```
 
 ## SOURCE CODE:
 
 ```java
 import java.util.*;
-public class Main {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
-        int a = 0;
-        int b = 1;
 
-        System.out.print("Fibonacci Series: ");
-        
-        if(num == 1) {
-            System.out.print("0 1");
-        } else {
-            for(int i = 0; i < num; i++) {
-                System.out.print(a + " ");
-                int next = a + b;
-                a = b;
-                b = next;
-            }
-        }
+class Employee {
+    String name;
+    int id;
+
+    Employee(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    void display() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee ID: " + id);
+    }
+}
+
+class prog {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        Employee obj = new Employee(sc.nextLine(), sc.nextInt());
+        obj.display();
     }
 }
 ```
 
 ## OUTPUT:
+<img width="576" height="322" alt="Screenshot 2025-11-24 at 1 29 26 PM" src="https://github.com/user-attachments/assets/6bad796a-67b3-4fda-a246-b7bfd8d5d306" />
 
-<img width="767" height="244" alt="image" src="https://github.com/user-attachments/assets/d52c5f8d-9c8e-4890-b3dd-c8935bc096c6" />
 
 ## RESULT:
-Thus, the Java program to print the Fibonacci series using a for loop was executed successfully.
 
+Thus, the Java program to demonstrate a parameterized constructor was successfully executed.
 
-
-
+---
 
 
