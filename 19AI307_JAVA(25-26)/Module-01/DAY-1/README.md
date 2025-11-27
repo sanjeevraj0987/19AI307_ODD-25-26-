@@ -38,8 +38,8 @@ To check whether all logical conditions based on two numbers are satisfied and d
  ```
 /*
 Program to implement variables and Operators using Java
-Developed by: Akshaya lakshmi V S
-RegisterNumber:  212222040005
+Developed by: Sanjeev raj T
+RegisterNumber:  212222040148
 */
 ```
 
@@ -73,4 +73,5 @@ class prog{
 
 ## RESULT:
 Thus, the program executed successfully and displayed the correct output based on the given input and conditions.
+
 
